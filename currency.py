@@ -1,6 +1,3 @@
-#Sam Tech OP
-#Ye karke bada Maza aaya😀😎
-
 from bs4 import BeautifulSoup
 import requests
 import pprint
