@@ -21,5 +21,4 @@ def iq_test(numbers):
                 print(indexval+1)
                 break
 
-#iq_test("2 4 6 3 10")
 iq_test("1 2 2")
