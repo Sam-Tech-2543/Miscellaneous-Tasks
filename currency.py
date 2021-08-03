@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import requests
 import pprint
 
 r=requests.get("https://www.google.com/search?q=1+dollars+in+rupees+live&rlz=1C1CHBD_enIN928IN928&oq=1+dollars+in+rupees+realtime&aqs=chrome.1.69i57j0i22i30j0i390l3.29864j1j7&sourceid=chrome&ie=UTF-8")
