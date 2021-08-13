@@ -31,7 +31,7 @@ def cal(image1, pw, ph):
     return mw, mh
 
 
-# Function of aligning to Center
+# Function for aligning to Center
 def align():
     last_paragraph = document.paragraphs[-1]
     last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -55,23 +55,22 @@ align()
 # Extensions
 extensions = ["png", "jpg", "jpeg", "gif", "raw", "psd", "tiff", "ai", "jfif"]
 
-# Getting All File names in the Directory
+# Getting All images which are in the Directory
 aa = os.listdir()
 a = []
 for i in aa:
     if i.split(".")[-1].lower() in extensions:
         a.append(i)
 
-# List of Files which were added
+# List for Files which were added
 lst = []
 
-# List of Files which were not added
+# List for Files which were not added
 notlst = []
 
 # For the First Image, as the Heading has been added we need to reduce the Page Height
 if a != []:
     try:
-        # Checking if File is Image or Not
         name = document.add_paragraph().add_run(a[0])
         name.font.size = Pt(18)
         name.bold = True
